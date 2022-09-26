@@ -49,32 +49,8 @@ const Footer = () => {
           <a href="tel: +358 44 9717620" className="p-text"> +358 44 9717620</a>
         </div>
       </div>
-      {!isFormSubmitted ? (
-        <div className="app__footer-form app__flex">
-          <div className="app__flex">
-            <input className="p-text" type="text" placeholder="Nimi" name="username" value={username} onChange={handleChangeInput} />
-          </div>
-          <div className="app__flex">
-            <input className="p-text" type="email" placeholder="Sähköposti" name="email" value={email} onChange={handleChangeInput} />
-          </div>
-          <div>
-            <textarea
-              className="p-text"
-              placeholder="Kirjoita viesti"
-              value={message}
-              name="message"
-              onChange={handleChangeInput}
-            />
-          </div>
-          <button type="button" className="p-text" onClick={handleSubmit}>{!loading ? 'Lähetä viesti' : 'Lähettää...'}</button>
-        </div>
-      ) : (
-        <div>
-          <h3 className="head-text">
-            kiitos yhteyden otostasi!
-          </h3>
-        </div>
-      )}
+      
+      
     </>
   );
 };
