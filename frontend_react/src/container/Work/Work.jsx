@@ -43,7 +43,7 @@ const Work = () => {
   return (
     <>
     <h2 className='head-text'>
-        Meikäläisen upeat <span>Portfolio </span><span>Työt</span>
+        My <span>Portfolio </span><span>Jobs</span>
       </h2>
 
       <div className='app__work-filter'>
